@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Repeater</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            margin: 50px;
-        }
-        .input-field {
-            margin-bottom: 10px;
-        }
-        .output {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .iframe-container {
-            width: 300px;
-            height: 200px;
-            border: 1px solid #ccc;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>Free youtube views</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>URL Repeater</h1>
+        <h1>Free Youtube views</h1>
         <div class="input-field">
-            <label for="pageNumber">Number of Pages:</label>
+            <label for="pageNumber">Number of views:</label>
             <input type="number" id="pageNumber" min="1">
         </div>
         <div class="input-field">
             <label for="url">URL:</label>
             <input type="url" id="url">
+        </div>
+        <div class="input-field">
+            <label for="autoplay">
+                <input type="checkbox" id="autoplay"> Autoplay
+            </label>
+        </div>
+        <div class="input-field">
+            <label for="mute">
+                <input type="checkbox" id="mute"> Mute
+            </label>
         </div>
         <button onclick="generateUrls()">Enter</button>
         <div class="output" id="output"></div>
